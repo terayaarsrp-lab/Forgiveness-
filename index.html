@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guna I'm Sorry My Life</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&family=Great+Vibes&display=swap');
+        
+        body { margin: 0; font-family: 'Poppins', sans-serif; background: #000; color: white; overflow: hidden; }
+        .page { height: 100vh; width: 100vw; display: none; flex-direction: column; align-items: center; justify-content: center; text-align: center; padding: 20px; box-sizing: border-box; background: radial-gradient(circle, #2c0000 0%, #000 100%); }
+        .active { display: flex; animation: fadeIn 0.8s ease-in-out; }
+        
+        img { width: 220px; height: 220px; border-radius: 50%; border: 4px solid #ff4d4d; object-fit: cover; margin-bottom: 20px; box-shadow: 0 0 30px rgba(255, 77, 77, 0.6); }
+        h2 { font-family: 'Great Vibes', cursive; color: #ff4d4d; font-size: 40px; margin: 10px 0; }
+        p { font-size: 18px; line-height: 1.6; max-width: 500px; font-style: italic; color: #ffcccc; }
+        
+        .btn { background: #ff4d4d; color: white; border: none; padding: 12px 35px; border-radius: 30px; cursor: pointer; margin-top: 25px; font-size: 16px; font-weight: bold; transition: 0.4s; box-shadow: 0 4px 15px rgba(255, 77, 77, 0.4); }
+        .btn:hover { transform: scale(1.1); background: #fff; color: #ff4d4d; }
+
+        .heart-bg { position: fixed; top: 0; left: 0; width: 100%; height: 100%; pointer-events: none; z-index: -1; }
+        @keyframes fadeIn { from { opacity: 0; transform: scale(0.9); } to { opacity: 1; transform: scale(1); } }
+    </style>
+</head>
+<body>
+
+<div class="page active" id="p1">
+    <img src="photo1.jpg" alt="Sorry">
+    <h2>Dear Guna...</h2>
+    <p>"नाराजगी हमसे है और तकलीफ खुद को देते हो,<br>ये कैसी मोहब्बत है जो हमसे दूर रहकर निभाते हो?"</p>
+    <button class="btn" onclick="nextPage(2)">Click to Feel My Heart ❤️</button>
+</div>
+
+<div class="page" id="p2">
+    <img src="photo2.jpg" alt="Memory">
+    <h2>I Miss Your Smile</h2>
+    <p>"गलती मेरी थी, सजा भी मेरी होनी चाहिए...<br>पर तुम्हारी खामोशी तो मेरी जान ही ले रही है।"</p>
+    <button class="btn" onclick="nextPage(3)">Please Listen... ❤️</button>
+</div>
+
+<div class="page" id="p3">
+    <img src="photo3.jpg" alt="Love">
+    <h2>You Are My Life</h2>
+    <p>"एक गलती पर न छोड़ देना हाथ मेरा...<br>बहुत मुश्किलों से मिला है साथ तुम्हारा।"</p>
+    <button class="btn" onclick="nextPage(4)">Wait, One More Thing ❤️</button>
+</div>
+
+<div class="page" id="p4">
+    <img src="photo4.jpg" alt="Pain">
+    <h2>दर्द होता है बहुत...</h2>
+    <p>"तुम्हें याद किए बिना एक पल भी नहीं गुजरता,<br>बस अब मान भी जाओ, अब और सहा नहीं जाता।"</p>
+    <button class="btn" onclick="nextPage(5)">Just 5 More Steps ❤️</button>
+</div>
+
+<div class="page" id="p5">
+    <img src="photo5.jpg" alt="Wait">
+    <h2>सिर्फ तुम और मैं</h2>
+    <p>"हजारों गलतियां की होंगी मैंने, पर इरादा कभी गलत नहीं था...<br>तुम्हें खोने का ख्याल ही रूह कंपा देता है।"</p>
+    <button class="btn" onclick="nextPage(6)">Don't Leave Me ❤️</button>
+</div>
+
+<div class="page" id="p6">
+    <img src="photo6.jpg" alt="Promise">
+    <h2>My Promise</h2>
+    <p>"वादा करता हूँ अब कभी तुम्हारी आँखों में आंसू नहीं आने दूंगा,<br>बस एक मौका और दे दो खुद को साबित करने का।"</p>
+    <button class="btn" onclick="nextPage(7)">Feeling Sorry... ❤️</button>
+</div>
+
+<div class="page" id="p7">
+    <img src="photo7.jpg" alt="Stars">
+    <h2>तू ही है सब कुछ</h2>
+    <p>"रूठने का हक है तुम्हें, पर भूल जाने का नहीं...<br>हम तो तुम्हारे साये से भी मोहब्बत करते हैं।"</p>
+    <button class="btn" onclick="nextPage(8)">Almost There ❤️</button>
+</div>
+
+<div class="page" id="p8">
+    <img src="photo8.jpg" alt="Heartbeat">
+    <h2>धड़कन रुक सी गई है</h2>
+    <p>"जब तुम बात नहीं करती, तो ये दुनिया वीरान लगती है,<br>प्लीज वापस आ जाओ, मेरी दुनिया में रंग भर दो।"</p>
+    <button class="btn" onclick="nextPage(9)">Second Last Step ❤️</button>
+</div>
+
+<div class="page" id="p9">
+    <img src="photo9.jpg" alt="Hug">
+    <h2>Give Me A Chance</h2>
+    <p>"शायद मैं परफेक्ट नहीं हूँ, पर मेरा प्यार तुम्हारे लिए सबसे सच्चा है।"</p>
+    <button class="btn" onclick="nextPage(10)">Final Heart ❤️</button>
+</div>
+
+<div class="page" id="p10">
+    <img src="photo10.jpg" alt="Together">
+    <h2>Forever Yours?</h2>
+    <p>"I am really, really sorry Guna. <br> क्या तुम अपने इस पागल को माफ़ करोगी?"</p>
+    <div style="display: flex; gap: 10px;">
+        <button class="btn" style="background: #28a745;" onclick="alert('I Love You! Thank you for forgiving me! ❤️')">YES ❤️</button>
+        <button class="btn" onmouseover="moveButton(this)" id="noBtn">NO 💔</button>
+    </div>
+</div>
+
+<script>
+    function nextPage(pageNo) {
+        document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
+        document.getElementById('p' + pageNo).classList.add('active');
+    }
+
+    // No बटन को भागने वाला मज़ेदार फंक्शन
+    function moveButton(btn) {
+        btn.style.position = 'absolute';
+        btn.style.top = Math.random() * 80 + 'vh';
+        btn.style.left = Math.random() * 80 + 'vw';
+    }
+</script>
+
+</body>
+</html>
